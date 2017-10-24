@@ -5,8 +5,12 @@ config.serviceName = 'algorunner';
 
 config.workerCommunication = {
     adapterName: 'socket',
-    config: {}
-}
+    config: {
+        connection:{
+            port: process.env.WORKER_SOCKET_PORT || 3000
+        }
+    }
+};
 
 
 
