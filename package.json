@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./dockerfile/build.sh algorunner"
+    "build": "./dockerfile/build.sh algorunner",
+    "test": "echo No test defined"
   },
   "repository": {
     "type": "git",
