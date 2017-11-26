@@ -2,8 +2,8 @@
 process.env.NODE_PATH = __dirname;
 require('module').Module._initPaths();
 
-const configIt = require('config.rf');
-const Logger = require('logger.rf');
+const configIt = require('@hkube/config');
+const Logger = require('@hkube/logger');
 const componentName = require('common/consts/componentNames');
 const algorunner = require('./lib/algorunner');
 let log;
