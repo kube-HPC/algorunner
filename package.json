@@ -16,12 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "@hkube/config": "^1.0.0",
+    "@hkube/logger": "^1.0.10",
+    "@hkube/redis-utils": "^1.0.2",
     "djsv": "^1.4.2",
     "forward-emitter": "^0.1.1",
     "javascript-state-machine": "^3.0.1",
-    "@hkube/logger": "^1.0.2",
-    "@hkube/redis-utils": "^1.0.0",
-    "socket.io-client": "^2.0.3",
+    "socket.io-client": "^2.0.4",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
