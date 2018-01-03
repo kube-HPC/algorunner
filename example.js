@@ -19,7 +19,7 @@ const store = {
             "input": [
                 [
                     "(input,require)=> {",
-                    "const result = input[0][0]*input[1].results[0]",
+                    "const result = input[0][0]*input[1]",
                     "return result;}"
                 ],
                 "@flowInput.multInput",
