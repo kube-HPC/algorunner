@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hkube/config": "^1.0.0",
+    "@hkube/config": "^2.0.0",
     "@hkube/logger": "^1.0.10",
     "@hkube/redis-utils": "^1.0.2",
     "djsv": "^1.4.2",
