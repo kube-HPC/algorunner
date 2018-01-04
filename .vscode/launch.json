@@ -8,7 +8,11 @@
             "type": "node",
             "request": "launch",
             "name": "app",
-            "program": "${workspaceRoot}/app.js"
+            "outputCapture": "std",
+            "program": "${workspaceRoot}/app.js",
+            "env":{
+                "WORKER_SOCKET_PORT":"19876"
+            }
         },
         {
             "type": "node",
