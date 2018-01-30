@@ -1,6 +1,5 @@
-FROM node:8
+FROM hkube/base-node:v1.0.0
 MAINTAINER yehiyam@gmail.com
-RUN apt update && apt install nano
 RUN mkdir /sound-factory
 COPY . /sound-factory/algorunner
 WORKDIR /sound-factory/algorunner
