@@ -1,16 +1,11 @@
-
-process.env.NODE_PATH = __dirname;
-require('module').Module._initPaths();
-
 const configIt = require('@hkube/config');
 const Logger = require('@hkube/logger');
-const componentName = require('common/consts/componentNames');
+const componentName = require('./common/consts/componentNames');
 const algorunner = require('./lib/algorunner');
 let log;
 
 const modules = [
-    'lib/workerCommunication/workerCommunication.js',
-
+    './lib/workerCommunication/workerCommunication.js'
 ];
 
 class Bootstrap {
@@ -21,8 +16,6 @@ class Bootstrap {
 
             log = new Logger(main.serviceName, logger);
             log.info('running application in ' + configIt.env() + ' environment', { component: componentName.MAIN });
-
-
             await Promise.all(modules.map(m => require(m).init(main)));
             await algorunner.init(main);
             return main;
