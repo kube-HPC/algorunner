@@ -10,8 +10,8 @@
             "name": "app",
             "outputCapture": "std",
             "program": "${workspaceRoot}/app.js",
-            "env":{
-                "WORKER_SOCKET_PORT":"9876"
+            "env": {
+                "WORKER_SOCKET_PORT": "5678"
             }
         },
         {
