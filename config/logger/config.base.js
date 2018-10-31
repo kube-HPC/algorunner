@@ -1,7 +1,7 @@
 const config = module.exports = {};
-
 config.transport = {
     console: true,
+    fluentd: false,
     logstash: false,
     file: false
 };

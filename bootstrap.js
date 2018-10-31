@@ -1,6 +1,6 @@
 const configIt = require('@hkube/config');
 const Logger = require('@hkube/logger');
-const componentName = require('./common/consts/componentNames');
+const componentName = require('./lib/consts/componentNames');
 const algorunner = require('./lib/algorunner');
 let log;
 

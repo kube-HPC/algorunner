@@ -15,22 +15,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hkube/config": "^2.0.5",
-    "@hkube/logger": "^1.0.12",
-    "@hkube/redis-utils": "^1.0.2",
-    "djsv": "^3.0.3",
+    "@hkube/config": "^2.0.7",
+    "@hkube/logger": "^1.0.14",
+    "@hkube/redis-utils": "^1.0.3",
+    "djsv": "^3.0.5",
     "forward-emitter": "^0.1.1",
-    "javascript-state-machine": "^3.0.1",
-    "socket.io-client": "^2.0.4",
-    "uuid": "^3.1.0"
+    "javascript-state-machine": "^3.1.0",
+    "socket.io-client": "^2.1.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "clone": "^2.1.1",
-    "coveralls": "^3.0.0",
+    "chai": "^4.2.0",
+    "clone": "^2.1.2",
+    "coveralls": "^3.0.2",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.5.3",
-    "request": "^2.83.0",
-    "sinon": "^4.1.2"
+    "request": "^2.88.0",
+    "sinon": "^4.5.0"
   }
 }
