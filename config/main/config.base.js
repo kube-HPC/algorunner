@@ -1,7 +1,7 @@
-
+const packageJson = require(process.cwd() + '/package.json');
 const config = module.exports = {};
 
-config.serviceName = 'algorunner';
+config.serviceName = packageJson.name;
 
 config.workerCommunication = {
     adapterName: 'socket',
@@ -12,6 +12,3 @@ config.workerCommunication = {
         }
     }
 };
-
-
-

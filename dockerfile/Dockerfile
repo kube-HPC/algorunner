@@ -1,7 +1,7 @@
 ARG BASE_PRIVATE_REGISTRY=""
 FROM ${BASE_PRIVATE_REGISTRY}hkube/base-node:v1.0.0
 LABEL maintainer="yehiyam@gmail.com"
-RUN mkdir /sound-factory
-COPY . /sound-factory/algorunner
-WORKDIR /sound-factory/algorunner
+RUN mkdir /hkube
+COPY . /hkube/algorunner
+WORKDIR /hkube/algorunner
 CMD ["node", "app.js"]
