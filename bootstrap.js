@@ -1,5 +1,4 @@
 const configIt = require('@hkube/config');
-const componentName = require('./lib/consts/componentNames');
 const algorunner = require('./lib/algorunner');
 
 const modules = [
@@ -29,21 +28,21 @@ class Bootstrap {
 
     _handleErrors() {
         process.on('exit', (code) => {
-            console.info('exit' + (code ? ' code ' + code : ''), { component: componentName.MAIN });
+            console.info('exit' + (code ? ' code ' + code : ''));
         });
         process.on('SIGINT', () => {
-            console.info('SIGINT', { component: componentName.MAIN });
+            console.info('SIGINT');
             process.exit(1);
         });
         process.on('SIGTERM', () => {
-            console.info('SIGTERM', { component: componentName.MAIN });
+            console.info('SIGTERM');
             process.exit(1);
         });
         process.on('unhandledRejection', (error) => {
-            console.error('unhandledRejection: ' + error.message, { component: componentName.MAIN }, error);
+            console.error('unhandledRejection: ' + error.message);
         });
         process.on('uncaughtException', (error) => {
-            console.error('uncaughtException: ' + error.message, { component: componentName.MAIN }, error);
+            console.error('uncaughtException: ' + error.message);
             process.exit(1);
         });
     }

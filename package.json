@@ -4,32 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./dockerfile/build.sh algorunner",
-    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test",
-    "test": "echo No test defined"
+    "build": "./dockerfile/build.sh algorunner"
   },
   "repository": {
     "type": "git",
-    "url": "http://yehiyam@greenape.ddns.net/soundFactory/algorunner.git"
+    "url": "git@github.com:kube-HPC/algorunner.git"
   },
-  "author": "",
+  "author": "Hkube",
   "license": "ISC",
   "dependencies": {
     "@hkube/config": "^2.0.7",
-    "@hkube/redis-utils": "^1.0.3",
     "djsv": "^3.0.5",
     "forward-emitter": "^0.1.1",
-    "javascript-state-machine": "^3.1.0",
-    "socket.io-client": "^2.1.1",
-    "uuid": "^3.3.2"
-  },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "clone": "^2.1.2",
-    "coveralls": "^3.0.2",
-    "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^3.5.3",
-    "request": "^2.88.0",
-    "sinon": "^4.5.0"
+    "socket.io-client": "^2.1.1"
   }
 }
