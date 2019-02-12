@@ -4,7 +4,7 @@ const config = module.exports = {};
 config.serviceName = packageJson.name;
 
 config.workerCommunication = {
-    adapterName: process.env.WORKER_SOCKET_PROTOCOL || 'socket',
+    adapterName: process.env.WORKER_ALGORITHM_PROTOCOL || 'socket',
     config: {
         connection: {
             port: process.env.WORKER_SOCKET_PORT || 3000,
