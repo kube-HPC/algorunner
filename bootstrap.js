@@ -1,17 +1,12 @@
 const configIt = require('@hkube/config');
 const algorunner = require('./lib/algorunner');
 
-const modules = [
-    './lib/workerCommunication/workerCommunication.js'
-];
-
 class Bootstrap {
     async init() {
         try {
             const { main } = configIt.load();
             this._handleErrors();
 
-            await Promise.all(modules.map(m => require(m).init(main)));
             await algorunner.init(main);
             return main;
         }
