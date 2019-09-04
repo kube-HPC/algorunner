@@ -11,7 +11,7 @@ class Bootstrap {
             return main;
         }
         catch (error) {
-            this._onInitFailed(new Error(`unable to start application. ${error.message}`));
+            this._onInitFailed(error);
         }
     }
 
