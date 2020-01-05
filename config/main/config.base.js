@@ -1,9 +1,11 @@
 const packageJson = require(process.cwd() + '/package.json');
+const { parseBool } = require(process.cwd() + '/lib/utils/formatters');
 const config = module.exports = {};
 
 config.serviceName = packageJson.name;
 
 config.adapter = process.env.WORKER_ALGORITHM_PROTOCOL || 'ws';
+config.binary = parseBool(process.env.WORKER_BINARY, false);
 
 config.socket = {
     port: process.env.WORKER_SOCKET_PORT || 3000,
