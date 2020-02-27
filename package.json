@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@hkube/config": "^2.0.7",
-    "bson": "^4.0.2",
+    "@hkube/encoding": "^1.0.4",
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2",
     "uuid": "^3.3.2",
