@@ -1,5 +1,4 @@
 const packageJson = require(process.cwd() + '/package.json');
-const { parseBool } = require(process.cwd() + '/lib/utils/formatters');
 const config = module.exports = {};
 
 config.serviceName = packageJson.name;
