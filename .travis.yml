@@ -9,12 +9,9 @@ branches:
   - master
 install:
 - npm install
-- npm install -g snyk
-- snyk test || true
 cache:
   directories:
   - node_modules
-
 after_success:
 - |
   if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
