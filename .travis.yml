@@ -2,16 +2,11 @@ sudo: required
 language: node_js
 node_js:
   - "14"
-services:
-  - docker
 branches:
   only:
     - master
 install:
-  - npm install
-cache:
-  directories:
-    - node_modules
+  - npm ci
 after_success:
   - |
     if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
@@ -24,7 +19,7 @@ after_success:
       git push origin version-branch:master --follow-tags
       docker login --username yehiyam --password ${DOCKER_HUB_PASS}
     else
-      echo "version skiped!"
+      echo "version skipped!"
     fi
 deploy:
   skip_cleanup: true
