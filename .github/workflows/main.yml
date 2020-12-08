@@ -29,7 +29,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - run: npm ci
+      # run npm ci inside docker
+      # - run: npm ci
       - name: version
         run: |
           git checkout -f -b version-branch
